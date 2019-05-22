@@ -23,7 +23,7 @@ class UserForm extends React.Component {
       console.log(user);
 
       this.props.createUser(user);
-  }
+  };
 
   render() {
     return (

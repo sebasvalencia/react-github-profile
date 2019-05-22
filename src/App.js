@@ -13,6 +13,7 @@ class App extends React.Component {
     this.setState({
       user
     });
+    this.props.history.push(`/dashboard/${user.id}`);
   };
 
   render() {
