@@ -1,15 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        GITHUB PROFILE
-      </header>
-    </div>
-  );
+import UserForm from "./components/UserForm";
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">GITHUB PROFILE</header>
+        <UserForm />
+      </div>
+    );
+  }
 }
 
 export default App;
