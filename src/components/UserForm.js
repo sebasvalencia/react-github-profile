@@ -18,11 +18,13 @@ class UserForm extends React.Component {
         id: this.idRef.current.value,
         email: this.emailRef.current.value,
         birthday: this.birthdayRef.current.value,
-        githubRef: this.githubRef.current.value
+        github: this.githubRef.current.value
       }
       console.log(user);
 
       this.props.createUser(user);
+
+      
   };
 
   render() {
