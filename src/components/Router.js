@@ -10,7 +10,7 @@ const Router = () =>(
     <BrowserRouter>
         <Switch>
             <Route exact path='/' component={App} ></Route>
-            <Route path='/dashboard/:userId' component={Dashboard} ></Route>
+            <Route path='/dashboard/:githubUser' component={Dashboard} ></Route>
             <Route component={NotFound} ></Route>
         </Switch>
     </BrowserRouter>

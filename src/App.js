@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import getUSerRepos from "./services/getUSerRepos";
 
 import UserForm from "./components/UserForm";
 
@@ -14,8 +13,8 @@ class App extends React.Component {
     this.setState({
       user
     });
-    this.props.history.push(`/dashboard/${user.id}`);
-    getUSerRepos(user.github);
+    this.props.history.push(`/dashboard/${user.github}`);
+    
   };
 
   render() {
